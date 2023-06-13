@@ -4,7 +4,7 @@ require("dotenv").config();
 let sequelize;
 //sequelize object with .env config parameter used throughout app
 if (process.env.JAWSDB_URL) {
-    sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL);
+    sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
     sequelize = new Sequelize(
         process.env.DB_NAME,
